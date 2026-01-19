@@ -1,0 +1,76 @@
+{
+  "convergence_analysis": {
+    "sgd": {
+      "epochs_to_90_percent": 50,
+      "final_train_acc": 0.5508333333333333,
+      "convergence_speed": "Slow"
+    },
+    "adam": {
+      "epochs_to_90_percent": 50,
+      "final_train_acc": 0.8133333333333334,
+      "convergence_speed": "Slow"
+    },
+    "adamw": {
+      "epochs_to_90_percent": 17,
+      "final_train_acc": 0.9558333333333333,
+      "convergence_speed": "Fast"
+    },
+    "rmsprop": {
+      "epochs_to_90_percent": 25,
+      "final_train_acc": 0.9475,
+      "convergence_speed": "Medium"
+    }
+  },
+  "stability_analysis": {
+    "sgd": {
+      "mean_gradient_norm": 0.030918424592028558,
+      "std_gradient_norm": 0.002402631162298515,
+      "coefficient_of_variation": 0.0777087187979806,
+      "stability": "High"
+    },
+    "adam": {
+      "mean_gradient_norm": 0.02170837377566899,
+      "std_gradient_norm": 0.003015022058171554,
+      "coefficient_of_variation": 0.13888751360780546,
+      "stability": "High"
+    },
+    "adamw": {
+      "mean_gradient_norm": 0.01671750417858391,
+      "std_gradient_norm": 0.004948156437638951,
+      "coefficient_of_variation": 0.29598655306321536,
+      "stability": "High"
+    },
+    "rmsprop": {
+      "mean_gradient_norm": 0.05115264726565028,
+      "std_gradient_norm": 0.04212726038186228,
+      "coefficient_of_variation": 0.8235597302146144,
+      "stability": "Medium"
+    }
+  },
+  "generalization_analysis": {
+    "sgd": {
+      "train_accuracy": 0.5508333333333333,
+      "test_accuracy": 0.5283333333333333,
+      "generalization_gap": 0.022499999999999964,
+      "generalization_quality": "Excellent"
+    },
+    "adam": {
+      "train_accuracy": 0.8133333333333334,
+      "test_accuracy": 0.5816666666666667,
+      "generalization_gap": 0.2316666666666667,
+      "generalization_quality": "Fair"
+    },
+    "adamw": {
+      "train_accuracy": 0.9558333333333333,
+      "test_accuracy": 0.665,
+      "generalization_gap": 0.2908333333333333,
+      "generalization_quality": "Fair"
+    },
+    "rmsprop": {
+      "train_accuracy": 0.9475,
+      "test_accuracy": 0.5,
+      "generalization_gap": 0.4475,
+      "generalization_quality": "Fair"
+    }
+  }
+}

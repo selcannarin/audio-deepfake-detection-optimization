@@ -1,0 +1,19 @@
+{
+  "why_scaling_critical": {
+    "gradient_magnitude": "Features with large scales dominate gradient updates",
+    "convergence_speed": "Normalized features lead to faster convergence",
+    "numerical_stability": "Prevents numerical overflow/underflow",
+    "loss_landscape": "Creates more spherical loss surface for easier optimization",
+    "learning_rate": "Allows using consistent learning rates across features"
+  },
+  "method": "StandardScaler (z-score normalization)",
+  "formula": "z = (x - mu) / sigma",
+  "train_stats": {
+    "mean": 7.43122841040389e-10,
+    "std": 0.9999999403953552
+  },
+  "test_stats": {
+    "mean": 0.0037041688337922096,
+    "std": 0.9818241000175476
+  }
+}

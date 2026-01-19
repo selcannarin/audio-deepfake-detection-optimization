@@ -1,0 +1,17 @@
+{
+  "models_dir": "/content/drive/MyDrive/DeepfakeOptimization_Clean/models",
+  "best_optimizer": "adamw",
+  "feature_dim": 154,
+  "sample_rate": 16000,
+  "duration": 2.0,
+  "scaler_path": "/content/drive/MyDrive/DeepfakeOptimization_Clean/models/scaler.pkl",
+  "cnn_model_path": "/content/drive/MyDrive/DeepfakeOptimization_Clean/models/cnn_adamw_model.pth",
+  "supported_formats": [
+    "wav",
+    "mp3",
+    "flac",
+    "ogg",
+    "m4a"
+  ],
+  "max_file_size_mb": 200
+}

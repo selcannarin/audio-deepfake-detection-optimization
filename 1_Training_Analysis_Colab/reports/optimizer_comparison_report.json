@@ -1,0 +1,55 @@
+{
+  "experiment": "Optimizer Comparison Study",
+  "model": "ImprovedCNN (154-D input)",
+  "dataset": "ASVspoof 2019 LA",
+  "optimizers_tested": [
+    "sgd",
+    "adam",
+    "adamw",
+    "rmsprop"
+  ],
+  "results": [
+    {
+      "Optimizer": "SGD",
+      "Final Accuracy": 0.5283333333333333,
+      "Final F1-Score": 0.6795016987542469,
+      "Final AUC": 0.7977444444444444,
+      "Final Loss": 0.04251355677843094,
+      "Avg Gradient Norm": 0.030918424592028558,
+      "Convergence Speed": 50
+    },
+    {
+      "Optimizer": "ADAM",
+      "Final Accuracy": 0.5816666666666667,
+      "Final F1-Score": 0.2808022922636103,
+      "Final AUC": 0.9216444444444445,
+      "Final Loss": 0.029546407982707024,
+      "Avg Gradient Norm": 0.02170837377566899,
+      "Convergence Speed": 50
+    },
+    {
+      "Optimizer": "ADAMW",
+      "Final Accuracy": 0.665,
+      "Final F1-Score": 0.49624060150375937,
+      "Final AUC": 0.9956222222222222,
+      "Final Loss": 0.008070764131844044,
+      "Avg Gradient Norm": 0.01671750417858391,
+      "Convergence Speed": 49
+    },
+    {
+      "Optimizer": "RMSPROP",
+      "Final Accuracy": 0.5,
+      "Final F1-Score": 0.0,
+      "Final AUC": 0.9719555555555556,
+      "Final Loss": 0.01607665605843067,
+      "Avg Gradient Norm": 0.05115264726565028,
+      "Convergence Speed": 48
+    }
+  ],
+  "best_optimizer": "adamw",
+  "analysis": {
+    "convergence": "Comparison of convergence speed across optimizers",
+    "stability": "Gradient norm tracking shows optimizer stability",
+    "generalization": "Train-test gap indicates generalization ability"
+  }
+}

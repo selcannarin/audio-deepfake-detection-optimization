@@ -1,0 +1,75 @@
+{
+  "model": "CNN",
+  "optimizer": "adamw",
+  "methods": [
+    "Saliency Maps",
+    "Integrated Gradients",
+    "FGSM Attack"
+  ],
+  "saliency": {
+    "top_10_features": [
+      19,
+      103,
+      20,
+      93,
+      104,
+      94,
+      27,
+      41,
+      117,
+      129
+    ],
+    "mean_saliency": 0.12105190008878708,
+    "max_saliency": 0.44925379753112793,
+    "feature_group_means": {
+      "LPS": 0.12146832048892975,
+      "LFCC": 0.128595232963562,
+      "Contrast": 0.11221868544816971,
+      "MPE": 0.1438644677400589,
+      "MFCC": 0.10477753728628159
+    }
+  },
+  "integrated_gradients": {
+    "mean_attribution": 0.04967040941119194,
+    "max_attribution": 0.28495627641677856,
+    "feature_group_means": {
+      "LPS": 0.040187492966651917,
+      "LFCC": 0.060772575438022614,
+      "Contrast": 0.05659261718392372,
+      "MPE": 0.04338989779353142,
+      "MFCC": 0.04876864701509476
+    }
+  },
+  "fgsm_attack": [
+    {
+      "epsilon": 0.0,
+      "accuracy": 0.6616666666666666,
+      "attack_success": 0.0033333333333333335
+    },
+    {
+      "epsilon": 0.05,
+      "accuracy": 0.5533333333333333,
+      "attack_success": 0.11166666666666666
+    },
+    {
+      "epsilon": 0.1,
+      "accuracy": 0.5,
+      "attack_success": 0.165
+    },
+    {
+      "epsilon": 0.15,
+      "accuracy": 0.46166666666666667,
+      "attack_success": 0.20333333333333334
+    },
+    {
+      "epsilon": 0.2,
+      "accuracy": 0.37666666666666665,
+      "attack_success": 0.28833333333333333
+    }
+  ],
+  "interpretation": {
+    "saliency": "Shows which features CNN focuses on for decisions",
+    "ig": "Stable attribution method integrating gradients along path",
+    "fgsm": "Reveals model vulnerability to adversarial perturbations"
+  }
+}

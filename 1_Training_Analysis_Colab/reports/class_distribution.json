@@ -1,0 +1,8 @@
+{
+  "total_samples": 3000,
+  "bonafide_count": 1500,
+  "spoof_count": 1500,
+  "balance_ratio": 1.0,
+  "target_per_class": 1500,
+  "achieved_balance": "Yes"
+}

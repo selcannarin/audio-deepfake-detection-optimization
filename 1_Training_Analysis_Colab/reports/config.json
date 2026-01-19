@@ -1,0 +1,64 @@
+{
+  "seed": 42,
+  "device": "cpu",
+  "dataset": "ASVspoof_2019_LA",
+  "n_samples_per_class": 1500,
+  "test_size": 0.2,
+  "sr": 16000,
+  "duration": 2.0,
+  "n_mfcc": 20,
+  "n_lfcc": 20,
+  "n_lps": 20,
+  "n_contrast_bands": 6,
+  "mpe_scales": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "mpe_orders": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "batch_size": null,
+  "epochs_cnn": 50,
+  "epochs_seresnet": 50,
+  "optimizers": {
+    "sgd": {
+      "lr": 0.01,
+      "momentum": 0.9,
+      "weight_decay": 0.0001,
+      "nesterov": true
+    },
+    "adam": {
+      "lr": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0.01
+    },
+    "adamw": {
+      "lr": 0.001,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0.01
+    },
+    "rmsprop": {
+      "lr": 0.001,
+      "alpha": 0.99,
+      "eps": 1e-08,
+      "weight_decay": 0.01
+    }
+  },
+  "dropout_rate": 0.5,
+  "focal_alpha": 0.25,
+  "focal_gamma": 2.0
+}
